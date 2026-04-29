@@ -307,8 +307,7 @@ def result():
     <button class="btn-copy" onclick="copy()" id="cb">Copy Code</button>
   </div>
   <div class="actions">
-    <a href="tel:+919999999999" class="btn-pri">Call to Claim Discount</a>
-    <a href="/restart" class="btn-sec">Retake Quiz</a>
+    <a href="tel:+918438741522" class="btn-pri">Call to Claim Discount</a>
   </div>
   <div class="rev-wrap">
     <div class="rev-title">Your Answer Review</div>
