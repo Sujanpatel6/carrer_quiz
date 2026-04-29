@@ -1,9 +1,10 @@
 from flask import Flask, request, session, redirect, url_for
-import json, os
+import json, os, urllib.request, urllib.parse
 from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'skillup-secret-2024')
+SHEET_URL = os.environ.get('GOOGLE_SHEET_URL', '')
 
 QUESTIONS = [
     {"id":1,"category":"Career Goals","question":"What is your main goal after completing a course?","options":["Get a high-paying job","Switch to a new career","Start my own business","Get a promotion in current job"],"answer":"Get a high-paying job"},
@@ -35,12 +36,22 @@ def discount(score):
     else: return 10, "Outstanding! You are ready to conquer the job market!"
 
 def save_lead(data):
-    leads = []
-    if os.path.exists('leads.json'):
-        try: leads = json.load(open('leads.json'))
-        except: pass
-    leads.append(data)
-    json.dump(leads, open('leads.json','w'), indent=2)
+    if SHEET_URL:
+        try:
+            payload = json.dumps(data).encode('utf-8')
+            req = urllib.request.Request(SHEET_URL, data=payload,
+                headers={'Content-Type': 'application/json'}, method='POST')
+            urllib.request.urlopen(req, timeout=5)
+        except Exception as e:
+            print(f"Sheet save error: {e}")
+    try:
+        leads = []
+        if os.path.exists('leads.json'):
+            leads = json.load(open('leads.json'))
+        leads.append(data)
+        json.dump(leads, open('leads.json','w'), indent=2)
+    except:
+        pass
 
 CSS = """
 <style>
