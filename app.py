@@ -146,7 +146,9 @@ def index():
     err_html = f'<div class="err-box">Warning: {error}</div>' if error else ''
     return f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Career Quiz - Win Fee Discounts!</title>{CSS}</head>
+<title>Career Quiz - Win Fee Discounts!</title>
+<link rel="icon" href="https://ibb.co/qLFP41Y5" type="image/png">
+{CSS}</head>
 <body><div class="wrap">
   <div class="logo">Career Quiz</div>
   <div class="badge"><div class="dot"></div>FREE Quiz - Win Up To 10% Fee Discount</div>
