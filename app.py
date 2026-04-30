@@ -177,11 +177,10 @@ def index():
       <div class="fg"><label>Course You are Interested In</label>
         <select name="course_interest">
           <option value="">Select a course...</option>
-          <option>Data Science Bootcamp</option>
-          <option>Data Analytics Program</option>
+          <option>Data Science with Genai</option>
+          <option>Data Analytics with Genai</option>
           <option>Generative AI Course</option>
-          <option>Digital Marketing Mastery</option>
-          <option>Full Stack AI + Analytics</option>
+          <option>Digital Marketing with Genai</option>
         </select>
       </div>
       <button class="btn" type="submit">Start the Quiz</button>
