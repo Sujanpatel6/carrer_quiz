@@ -119,7 +119,7 @@ select option{background:var(--card)}
 .btn-copy{background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:10px;padding:10px 18px;color:var(--gold);font-family:'Syne',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:background .2s;white-space:nowrap}
 .btn-copy:hover{background:rgba(255,215,0,.2)}
 .actions{display:flex;gap:12px;width:100%;max-width:580px;margin-bottom:40px;flex-wrap:wrap}
-.btn-pri{flex:1;background:linear-gradient(135deg,#6c63ff,#8b5cf6);border:none;border-radius:14px;padding:15px;color:#fff;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:7px;transition:transform .2s,box-shadow .2s;min-width:150px}
+.btn-pri{flex:1;background:linear-gradient(135deg,#075e54,#25d366);border:none;border-radius:14px;padding:15px;color:#fff;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:7px;transition:transform .2s,box-shadow .2s;min-width:150px}
 .btn-pri:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(108,99,255,.4)}
 .btn-sec{flex:1;background:var(--card);border:1px solid var(--bord);border-radius:14px;padding:15px;color:var(--mut);font-family:'Syne',sans-serif;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:7px;transition:border-color .2s,color .2s;min-width:150px}
 .btn-sec:hover{border-color:var(--acc);color:var(--txt)}
