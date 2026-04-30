@@ -320,7 +320,7 @@ def result():
     <button class="btn-copy" onclick="copy()" id="cb">Copy Code</button>
   </div>
   <div class="actions">
-    <a href="https://chat.whatsapp.com/CgvJmVNuvIVAvfEd4Aujev?mode=gi_t" class="btn-pri">join Whatsapp community</a>
+    <a href="https://chat.whatsapp.com/HcXAdj6t8ks8Wzdx21TZ25" class="btn-pri">join Whatsapp community</a>
   </div>
   <div class="rev-wrap">
     <div class="rev-title">Your Answer Review</div>
